@@ -28,7 +28,7 @@ for i in range(1, 11):
 # 9
 # 10
 print("-----------------Jump concept in loop-------------")
-for even in range(2, 11, 2):
+for even in range(1,11, 2):
     print(even)
 
 #output
