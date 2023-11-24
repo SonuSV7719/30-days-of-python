@@ -22,9 +22,9 @@ print(str3[-4]) # output -> o
 
 #2. String Slicing 
 # Syntax 
-# String_variable_name[start:end:jump] -> end(excluded)
-str3 = "GOod!!"
-print(str3[:]) # --> output->Good!!
+# String_variable_name[start_idx:end_idx:jump] -> end(excluded)
+str3 = "GOod!!" # -->len(str3) ->6
+print(str3[:]) # --> output->GOod!!
 # (start default ->0, end default ->len(str))
 
 print(str3[:2]) # --> output->GO
@@ -103,8 +103,8 @@ print(upper) #Output -> HELLO
 lower = str1.lower()
 print(lower) #hello
 
-str2 = "Hello Boys"
-split_list = str2.split(" ")
+str2 = "Hello->Boys"
+split_list = str2.split("->")
 print(split_list) #Output -> ['Hello', 'Boys']
 
 cnt = str2.count('l')
@@ -123,6 +123,8 @@ str1 = "He"
 str2 = "He"
 yes_no = str1 is str2
 print(yes_no) # True
+
+str.find()
 
 
 
