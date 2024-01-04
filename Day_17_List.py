@@ -46,6 +46,7 @@ print(list1[-5:-8: -1]) # ['abc', 2.2, 1]
 list2 = [1,2]
 # Method 1 -->.append()-> Insert At last of list
 list2.append(2)
+# [1, 2, 2]
 
 # Method 2
 list2.insert(0, [1,2])
@@ -66,7 +67,7 @@ print(list4) #output->[1, 3]
 # Method 2
 list5 = [1,2,3]
 list5.remove(1)
-print(list4) #output->[1, 3]
+print(list4) #output->[2, 3]
 
 #Method 3
 list5.clear()
@@ -77,10 +78,34 @@ list6 = [1,2,3]
 popped_item = list6.pop(0)
 print(popped_item) #output-> 1
 print(list6) #output-> [2, 3]
-popped_item = list6.pop() #delete last item
+popped_item = list6.pop() #delete last item 3
 print(list6)#output-> [2]
 
 # 7. Functions
 list7 = [1,2,3,3, 4, 2, 2, 2]
-list7.count(2)
+print(list7.count(2)) #outupt-> 4
 
+# Iteration
+list1 = [1,2,3,4] # len--> 4 --> index 3
+
+# method 1 
+for i in range(len(list1)):# 0, len(list1) 4
+    print(list1[i])
+    
+# output
+
+# 1
+# 2
+# 3
+# 4
+
+# Method 2
+
+for item in list1:
+    print(item)
+   
+#output  
+# 1
+# 2
+# 3
+# 4 
